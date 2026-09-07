@@ -2,7 +2,6 @@
 
 - 🔭 I’m currently working on my own website hosted from my home lab via cloudflares tunnel https://grimreaper8408.nl
 - My current ocupation is as student IT system engineer on MBO.
-- 
 <!--
 **grimreaper8408/grimreaper8408** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
