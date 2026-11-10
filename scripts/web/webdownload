@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-# ytdownloader <playlist folder> <link>
+# webdownloader <playlist folder> <link>
 
 if test (count $argv) -lt 2
     echo "Usage: ytdownloader <playlist-folder> <link>"
