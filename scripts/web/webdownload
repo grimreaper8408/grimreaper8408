@@ -1,0 +1,17 @@
+#!/usr/bin/env fish
+
+# ytdownloader <playlist folder> <link>
+
+if test (count $argv) -lt 2
+    echo "Usage: ytdownloader <playlist-folder> <link>"
+    exit 1
+end
+
+set folder $argv[1]
+set link $argv[2]
+
+mkdir -p $folder; or exit 1
+cd $folder; or exit 1
+
+yt-dlp -x --audio-format m4a --audio-quality 0 -o "%(title)s.%(ext)s" $link
+

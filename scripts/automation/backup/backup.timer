@@ -1,0 +1,13 @@
+# Has to be in /etc/systemd/system/backup.timer
+[Unit]
+Description=Weekly Backup Timer (Saturday 04:00)
+Requires=backup.service
+
+[Timer]
+OnCalendar=Sat *-*-* 04:00:00
+Persistent=true
+AccuracySec=1h
+
+[Install]
+WantedBy=timers.target
+

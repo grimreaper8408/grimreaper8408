@@ -1,0 +1,29 @@
+# NAS Backup Configuration 
+# Location: /etc/backup/nas-sync.yaml
+
+connection:
+  user: "<ssh-user>"
+  host: "<remote-nas-ip>"
+  ssh_key: "~/.ssh/nas_backup"
+  rsync_options:
+    delete: true          # Remove files in destination that don't exist in source
+    archive: true         # Preserve permissions, timestamps, symlinks
+    verbose: false
+    compress: true
+
+# Define backup jobs - add/remove entries as needed
+# /etc/backup/nas-sync.yaml
+backups:
+
+  - name: "<example-service-name>"
+    source: "<local/folder>"
+    destination: "<remote/folder>"
+    exclude: ["<excludes allowes globbing like .gitignore>"]
+
+  - name: "<example-service-2>"
+    source: "<local/folder>"
+    destination: "<remote/folder>"
+    exclude: [.env, /*/, '*.????']
+
+
+# script was made with aid of the LLM Lumo.proton.me
