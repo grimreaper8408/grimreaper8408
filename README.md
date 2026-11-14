@@ -3,7 +3,7 @@
 - 🔭 I’m currently working on my own website hosted from my home lab via cloudflares tunnel https://grimreaper8408.nl
 - My current ocupation is as student IT system engineer on MBO.
 
-- all my work(if not specified otherwise fals under the PolyForm Noncommercial 1.0.0 License)
+- all my work(if not specified otherwise falls under the PolyForm Noncommercial 1.0.0 License)
 <!--
 **grimreaper8408/grimreaper8408** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
